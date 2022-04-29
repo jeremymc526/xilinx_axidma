@@ -31,7 +31,7 @@ In the future, the driver will have proper synchronization for both multiple pro
 
 ### Linux Kernel
 
-The driver depends on the contiguous memory allocator (CMA), Xilinx's DMA and VDMA driver, and DMA buffer sharing. These must be enabled in the kernel the driver is complied against. These should be enabled by default in any Xilinx Linux kenrel fork. To be sure, make sure to double check the kernel configuration by running `make menuconfig` or by opening the `.config` file at the top level of your kernel source tree. The following options should be enabled:
+The driver depends on the contiguous memory allocator (CMA), Xilinx's DMA and VDMA driver, and DMA buffer sharing. These must be enabled in the kernel the driver is complied against. These should be enabled by default in any Xilinx Linux kernel fork. To be sure, make sure to double check the kernel configuration by running `make menuconfig` or by opening the `.config` file at the top level of your kernel source tree. The following options should be enabled:
 ```bash
 CONFIG_CMA=y
 CONFIG_DMA_CMA=y
